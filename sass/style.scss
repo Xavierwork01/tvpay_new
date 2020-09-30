@@ -1,0 +1,515 @@
+// --------------LoginHeader --------------
+
+.loginheader{
+    width: 100%;
+    height: 84px;
+    display:flex;
+    align-items: center;
+    background: orangered;
+    color:#fff;
+}
+
+.loginheader-nav{
+    width:1200px;
+    display:flex;
+    height: 35px;
+    justify-content: space-between;
+    margin:auto;
+    a{
+        color:#fff;
+    }
+}
+
+.login-logo-box{
+    width: 248px;
+    display:flex;
+    align-items: center;;
+    a{
+        margin:0 10px 0 0;
+        img{
+            width: 190px;
+            height: 42px;
+        }
+    }
+    div{
+        line-height: 35px;
+        font-size:20px;
+    }
+}
+.login-help{
+    line-height: 35px;
+}
+
+
+//--------------- login ----------------
+.login-wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    .login-box{
+        width:500px;
+        height: 475px;
+        padding:1.5rem 1.5rem 2rem 1.5rem;
+        h1{
+            font-weight: 900px;
+            font-size:20px;
+            text-align: center;
+            margin:0 0 20px 0;
+        }
+        button{
+            width: 100%;
+        }
+    }
+    .login-features{
+        width: 100%;
+        .login-others{
+            display:flex;
+            justify-content: space-between;
+            margin:15px 0;
+        }
+        .login-text{
+            display:flex;
+            align-items: center;
+            div{
+                width:50%;
+                height: 1px;
+                background: #000;
+            }
+            span{
+                padding: 0 16px;
+            }
+        }
+        .login-otherinter{
+            button{
+                border:none;
+                outline: none;
+                margin:5px;
+                cursor: pointer;
+            }
+            .login-facebook{
+                background: #1877f2;
+                width: 140px;
+                height: 40px;
+                .login-facebook-icon{
+                    color:#fff;
+                    width: 30px;
+                    height: 30px;
+                    
+                }
+            }
+            .login-google{
+                background: #4285f4;
+                width: 140px;
+                height: 40px;
+                .login-google-icon{
+                    width: 30px;
+                    height: 30px;
+                    background:#fff;
+                }
+            }
+            .login-apple{
+                background: #000;
+                width: 140px;
+                height: 40px;
+                .login-apple-icon{
+                    width: 30px;
+                    height: 30px;
+                    color:#fff;
+                }
+            }
+            
+        }
+        .login-newmember{
+            text-align:center;
+            line-height: 50px;
+            span{
+                padding:0 4px 0 0;
+            }
+            a{
+                color:orangered;
+            }
+        }
+    }
+}
+
+//--------------footer ---------------
+
+.footer{
+    width:100%;
+    margin:auto;
+    height: 468px;
+    hr{
+        margin:0 auto;
+        background:#000;
+        opacity: 0.3;
+        width:1200px;
+    }
+    .footer-top{
+        max-width:1200px;
+        height: 357px;
+        display:flex;
+        margin:auto;
+        .footer-items-box{
+            width: 240px;
+            div{
+                margin:40px 0 20px 0;
+            }
+        }
+    }
+    .footer-down{
+        width:100%;
+        margin:auto;
+        height: 101px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer-down-box{
+            width:1200px;
+            display:flex;
+            align-items: center;
+            margin:auto;
+            justify-content: space-between;
+            .footer-language-box{
+                display:flex;
+                align-items: center;
+                .footer-language-link{
+                    border-right:1px solid #000;
+                    height: 16px;
+                    padding:0 5px;
+                    display:flex;
+                    align-items: center;
+                    a{
+                        font-size: .875rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+//---------------- header ----------------
+
+.header-wrapper{
+    width: 100%;
+    height: 119px;
+    background: orangered;
+}
+.header{
+    max-width:1200px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    height: 34px;
+    
+    .header-left{
+        color:#fff;
+        display:flex;
+        align-items: center;
+        font-size: .8125rem;
+        .tvpay-download{
+            padding:0 7px;
+            height: 15px;
+            line-height: 15px;
+            text-align: center;
+            border-left:1px solid #fff;
+            border-right:1px solid #fff;
+        }
+        a{
+            color:#fff;
+            padding:0 7px;
+        }
+    }
+    .header-right{
+        color:#fff;
+        font-size: .8125rem;
+        a{
+            color:#fff;
+            padding:0 7px;
+        }
+    }
+    
+}
+
+.header-search{
+    max-width:1200px;
+    height: 85px;
+    padding: 16px 0 10px;
+    display:flex;
+    margin:auto;
+    .logo-link{
+        width: 202px;
+        height: 59px;
+        img{
+            width: 162px;
+            height: 59px;
+        }
+    }
+    .search-box{
+        .search-input{
+            width:100%;
+            height: 40px;
+            background:#fff;
+            border-radius:3px;
+            padding:3px;
+            display:flex;
+            align-items: center;
+
+            input{
+                width:774px;
+                height: 34px;
+                padding:0 0 0 10px;
+                border:none;
+                outline-style: none;
+            }
+            button{
+                width: 60px;
+                padding:0 10px;
+                height: 34px;
+                background: orangered;
+                border:none;
+                outline: none;
+                border-radius: 3px;
+                color:#fff;
+                .search-btn-icon{
+                    width:15px;
+                    height: 15px;
+                }
+            }
+            button:hover{
+                background: orange;
+            }
+        }
+        .search-link{
+            a{
+                padding:0 6.5px;
+                color:#fff;
+            }
+        }
+    }
+    .shopping-cart{
+        width:138px;
+        position: relative;
+        .shopping-icon{
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            top:calc(50% - 13px);
+            left:calc(50% - 13px);
+            color:#fff;
+        }
+    }
+}
+
+//----------------- section ---------------
+.home-page{
+    width:100%;
+    // height: 100vh;
+    background:#dedede;
+}
+.section {
+    width: 100%;
+    height: 383px;
+    background:#fff;
+    margin:auto;
+    padding:30px 0 0 0;
+}
+.banner1-content{
+    width: 1200px;
+    height: 235px;
+    margin:auto;
+    display:flex;
+}
+.slider-banner1{
+    width: 796.66px;
+    height: 235px;
+    
+    img{
+        width:100%;
+        height: 235px;
+    }
+}
+.banner1-box{
+    margin:0 0 0 5px;
+    .banner1-top{
+        width: 398.33px;
+        height: 115px;
+        margin:0 0 2.5px 0;
+        img{
+            width: 100%;
+            height: 115px;
+        }
+    }
+    .banner1-down{
+        width: 398.33px;
+        height: 115px;
+        margin:2.5px 0 0 0;
+        img{
+            width: 100%;
+            height: 115px;
+        }
+    }
+}
+.buy-items{
+    width: 1200px;
+    height: 108px;
+    margin:auto;
+    margin-top:10px;
+    display:flex;
+}
+.buy-11{
+    width:10%;
+    height: 108px;
+    display:flex;
+    align-items: center;
+    text-align:center;
+    padding:10px 0;
+    
+    .buy-box{
+        width: 100%;
+        height: 67px;
+        .buy-img{
+            width: 45px;
+            height: 45px;
+            margin:auto;
+            img{
+                width: 100%;
+                height: 45px;
+            }
+        }
+        
+        .buy-box{
+            margin:0 0 8px 0;
+        }
+
+    }
+
+}
+.buy-11:hover .buy-box{
+    transform: scale(1.1);
+    transition:0.5;
+}
+
+
+//------------------------ packagebanner -------------------------
+.packagebanner{
+    width: 100%;
+    margin:20px 0 0 0;
+    .packagebanner-content{
+        max-width:1200px;
+        height: 110px;
+        margin:auto;
+        img{
+            width: 100%;
+            height: 110px;
+        }
+        
+    }
+}
+
+// --------------------- sectionclass -----------------------
+
+.sectionclass{
+    width: 100%;
+    height: 382px;
+    .sectionclass-box{
+        width: 1200px;
+        padding:20px 0 0 0;
+        margin:auto;
+        
+        .sectionclass-header{
+            height: 61px;
+            padding:0 20px;
+            line-height: 61px;
+            background: #fff;
+        }
+        .sectionclass-items{
+            height: 300px;
+            background: #fff;
+            .sectionclass-item-top{
+                display:flex;
+            }
+            .sectionclass-item-down{
+                display:flex;
+            }
+        }
+    }
+}
+
+
+.sectionclass-column{
+    width: 120px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    border:0.5px solid #dedede;
+    .sectionclass-img{
+        width: 83px;
+        height: 76px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .sectionclass-name{
+        margin:10px 0;
+    }
+}
+
+// ------------- sectiontimeout ---------------
+
+.sectiontimeout{
+    width:1200px;
+    height: 321px;
+    margin:auto;
+    padding:20px 0 0 0;
+
+    .sectiontimeout-header{
+        width: 100%;
+        height: 61px;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        padding:0 20px;
+
+        .sectiontimeout-sales{
+            display:flex;
+        }
+    }
+    .sectiontimeout-items{
+        width: 100%;
+        height: 240px;
+        display:flex;
+        background: #fff;
+        .sectiontimeout-box{
+            width: 200px;
+            height: 240px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .sectiontimeout-img{
+                width: 173px;
+                height: 173px;
+                
+                img{
+                    width: 100%;
+                    height: 173px;
+                }
+            }
+        }
+    }
+}
+
+.sectiontimeout-price{
+    text-align: center;
+}
