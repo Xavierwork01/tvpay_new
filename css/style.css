@@ -11,7 +11,7 @@
 
 }
 
-.ticket{
+.take{
 
     background: #fffefb;
     border: 1px solid rgba(224,168,0,.4);
@@ -23,7 +23,7 @@
 
 }
 
-.ticket > div {
+.take > a {
 
     color:red;
 
@@ -33,7 +33,7 @@
 
     padding:0 20px;
     width: 100%;
-    margin:0 0 12px 0;
+    margin:0 0 10px 0;
     display:flex;
     align-items: center;
     justify-content: space-between;
@@ -57,21 +57,27 @@
 
 .shopcart-content{
 
-    display:flex;
-    align-items: center;
-    height: 115px;
     padding:0 20px;
+    margin:0 0 10px 0;
     background: #fff;
 
 }
 
-.shopcart-content > .col{
+.shopcart-pros{
+
+    display:flex;
+    align-items: center;
+    height: 115px;
+
+}
+
+.shopcart-pros > .col{
 
     text-align:center;
 
 }
 
-.shopcart-content > input{
+.shopcart-pros > input{
 
     width: 20px;
     height: 20px;
@@ -83,6 +89,14 @@
     display:flex;
     align-items: center;
     width: 580px;
+
+}
+
+.shopcart-pro > a{
+    
+    width:500px;
+    display:flex;
+    align-items:center;
 
 }
 
@@ -112,6 +126,8 @@
 .shopcart-mount > button{
 
     background: #fff;
+    border:1px solid #dedede;
+    width: 40px;
 }
 
 .shopcart-mount > input{
@@ -119,6 +135,8 @@
     width: 50px;
     height: 40px;
     text-align: center;
+    border:1px solid #dedede;
+    margin:0px;
 
 }
 
@@ -129,4 +147,329 @@
 
 }
 
+.shopcart-coupon{
 
+    background: #fff;
+}
+
+
+.shopcoupon-title{
+
+    display:flex;
+    align-items: center;
+    padding:0 20px;
+    height: 50px;
+    border-bottom:1px solid #dedede;
+
+}
+
+.shopcoupon-title > div{
+
+    margin:0 20px;
+
+}
+
+.shopcoupon-title > button{
+
+    border:1px solid #dedede;
+
+}
+
+.shopcoupon-cou{
+
+
+    display:flex;
+    align-items:center;
+    border-bottom:1px solid #dedede;
+    height: 50px;
+
+}
+
+.shopcoupon-cou > input{
+
+    width: 20px;
+    height: 20px;
+    margin:0 20px;
+
+}
+
+.shopcoupon-cou > div{
+
+    margin:0 10px;
+
+}
+
+.shopcoupon-end{
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.chk-all{
+
+    display:flex;
+    align-items: center;
+
+}
+
+.chk-all > input {
+
+    width: 20px;
+    height: 20px;
+    margin:0 20px;
+
+}
+
+.shopcoupon-price{
+
+    display:flex;
+    align-items: center;
+
+}
+
+.shopcoupon-msg > .shopcoupon-money{
+    
+    font-size:30px;
+    color:red;
+
+}
+
+.shopcoupon-msg > p{
+
+    color:#ffa500;
+    font-size:14px;
+
+}
+
+.shopcoupon-price > button{
+
+    width: 200px;
+    margin:0 20px;
+
+}
+
+.coupon-add{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: lightgray;
+    height: 80px;
+
+}
+
+.coupon-add > input {
+
+    width:343px;
+
+}
+
+.coupon-add > button{
+
+    border:1px solid #dedede;
+    background: #fff;
+
+}
+
+.coupon-add > button {
+
+    width:100px;
+
+}
+
+.coupon-add > div , input{
+
+    margin:0 10px;
+
+}
+
+.modal-footer > input{
+
+    width: 150px;
+
+}
+
+.coupon-box{
+
+    margin:20px 0;
+    
+}
+
+.coupon-msg{
+
+    height: 40px;
+    display:flex;
+    align-items: center;
+    padding:0 20px;
+    font-size:14px;
+    background:#fef7e7;
+
+}
+
+.coupon-use{
+
+    margin:20px 0 0 0;
+
+}
+
+.coupon-sales{
+
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    opacity: 0.5;
+    margin:0 0 10px 0;
+
+}
+
+.ticket-head{
+
+    background: lightgray;
+    width:118px;
+    height: 118px;
+    position: relative;
+    background-image: radial-gradient(
+        circle at 1px 8px, transparent 6px,
+        lightgray 6px,
+        lightgray 0px
+    );
+    background-image: 
+    radial-gradient(
+        circle at 1px 8px,
+        transparent 6px,
+        lightgray 6px, lightgray 0px
+    );
+    background-size: 118px 18px; 
+    background-repeat-x: no-repeat;
+
+}
+
+
+.ticket-head > h3 {
+
+    position: absolute;
+    top:calc(50% - 16.5px);
+    left:calc(50% - 33px);
+    margin:0px;
+    color:#dedede;
+    text-shadow:2px 3px 3px gray;
+
+}
+
+
+.ticket-body{
+
+    width:400px;
+    background: #fff;
+    box-shadow: 1px 0.8px 3px 0.5px #dedede;
+    display:flex;
+    align-items: center;
+
+}
+
+.ticket-name1{
+
+    width:70%;
+    padding:0 20px;
+
+}
+
+.ticket-name1 > p{
+
+    font-size:14px;
+    margin:0px;
+
+}
+
+.ticket-name2{
+
+    width:30%;
+    padding:0 20px;
+    display:flex;
+    align-items: flex-end;
+
+}
+
+.caption-wrapper{
+
+    background: lightgray;
+    height: 100vh;
+
+}
+
+.caption{
+
+    width:375px;
+    height: 700px;
+    margin:auto;
+
+}
+
+.caption-title{
+
+    background: #000;
+    width: 375px;
+    height:150px;
+}
+
+.caption-content{
+
+    padding:30px 20px;
+    background: #fff;
+
+}
+
+.caption-info > p {
+
+    font-size:14px;
+
+}
+
+.caption-content > button {
+
+    width: 100%;
+
+}
+
+.caption-title{
+
+    position: relative;
+
+}
+
+.coupon-example{
+
+    display:flex;
+    position: absolute;
+    bottom:-20px;
+    left:calc(50% - 171px)
+
+}
+
+.example-title{
+
+    position: relative;
+    width: 118px;
+    height: 118px;
+    background-image: radial-gradient(
+        circle at 1px 8px, transparent 3px,
+        lightgray 1px, lightgray 1px
+    );
+    background-image: radial-gradient(
+        circle at 1px 8px, transparent 3px,
+        lightgray 1px,lightgray 1px
+    );
+    background-size: 200px 18px;
+    background-repeat-x: no-repeat;
+
+}
+
+.example-body{
+
+    background: #fff;
+    width:225px;
+    height: 118px;
+
+}
