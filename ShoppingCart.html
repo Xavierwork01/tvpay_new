@@ -7,7 +7,7 @@
     <link rel="Shortcut Icon" type="image/x-icon" href="/images/favicon.ico"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shoppingcart.css">
 </head>
 <body>
     <div class="shoppingcart">
@@ -16,7 +16,7 @@
                 <a href="#" class="">點我領取優惠券!!!</a>
             </div>
             <div class="shopcart-header row">
-                <input type="checkbox">
+                <input type="checkbox" class="pro-chk-all">
                 <div class="col-6">商品</div>
                 <div class="col">單價</div>
                 <div class="col">數量</div>
@@ -25,24 +25,24 @@
             </div>
             <div class="shopcart-content">
                 <div class="shopcart-pros">
-                    <input type="checkbox">
+                    <input type="checkbox" class="pro-chk">
                     <div class="shopcart-pro">
                         <a href="#">
                             <div class="shopcart-img">
                                 <img src="" alt="">
                             </div>
-                            <div class="col-7">商品名稱</div>
+                            <div class="col-8 shopcart-name">商品名稱商品名稱商品名稱</div>
                         </a>
                         <div class="col">規格</div>
                     </div>
-                    <div class="col">$245000</div>
+                    <div class="col unit-price">$10,000</div>
                     <div class="col shopcart-mount">
-                        <button class="btn">-</button>
-                        <input type="number" class="form-control">
-                        <button class="btn">+</button>
+                        <button class="btn less-btn" id="less-btn">-</button>
+                        <input type="text" class="form-control mount-inp" id="mount-inp" value="1" maxlength="3">
+                        <button class="btn plus-btn" id="plus-btn">+</button>
                     </div>
-                    <div class="col">$200000</div>
-                    <button class="col btn">刪除</button>
+                    <div class="col total-price">$10,000</div>
+                    <button class="col btn del-btn">刪除</button>
                 </div>
             </div>
             <div class="shopcart-coupon">
@@ -62,15 +62,62 @@
                                         <input type="text" class="form-control">
                                         <button class="btn">使用</button>
                                     </div>
+                                    <div class="coupon-msg">
+                                        <div>請先在購物車中勾選商品再選擇折價券</div>
+                                    </div>
                                     <div class="coupon-box">
-                                        <div class="coupon-msg">
-                                            <div>請先在購物車中勾選商品再選擇折價券</div>
+                                        <div class="coupon-use">
+                                            <div class="coupon-sales">
+                                                <div class="ticket-head">
+                                                    <h3>TvPay</h3>
+                                                </div>
+                                                <div class="ticket-body">
+                                                    <div class="ticket-name1">
+                                                        <div>8折 低消$0 最高折 $50</div>
+                                                        <p>即將到期 剩下12小時</p>
+                                                    </div>
+                                                    <div class="ticket-name2">
+                                                        <a href="#" class="caption-open">使用規則</a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="coupon-use">
                                             <div class="coupon-sales">
                                                 <div class="ticket-head">
                                                     <h3>TvPay</h3>
-                                                    
+                                                </div>
+                                                <div class="ticket-body">
+                                                    <div class="ticket-name1">
+                                                        <div>8折 低消$0 最高折 $50</div>
+                                                        <p>即將到期 剩下12小時</p>
+                                                    </div>
+                                                    <div class="ticket-name2">
+                                                        <a href="#" class="caption-open">使用規則</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="coupon-use">
+                                            <div class="coupon-sales">
+                                                <div class="ticket-head">
+                                                    <h3>TvPay</h3>
+                                                </div>
+                                                <div class="ticket-body">
+                                                    <div class="ticket-name1">
+                                                        <div>8折 低消$0 最高折 $50</div>
+                                                        <p>即將到期 剩下12小時</p>
+                                                    </div>
+                                                    <div class="ticket-name2">
+                                                        <a href="#" class="caption-open">使用規則</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="coupon-use">
+                                            <div class="coupon-sales">
+                                                <div class="ticket-head">
+                                                    <h3>TvPay</h3>
                                                 </div>
                                                 <div class="ticket-body">
                                                     <div class="ticket-name1">
@@ -95,19 +142,19 @@
                 </div>
                 <div class="shopcoupon-content">
                     <div class="shopcoupon-cou">
-                        <input type="checkbox">
+                        <input type="checkbox" class="coupon-chk">
                         <i class="fas fa-ticket-alt"></i>
                         <div>XX券</div>
                         <div>-$1000</div>
                     </div>
                     <div class="shopcoupon-cou">
-                        <input type="checkbox">
+                        <input type="checkbox" class="coupon-chk">
                         <i class="fas fa-ticket-alt"></i>
                         <div>XX券</div>
                         <div>-$1000</div>
                     </div>
                     <div class="shopcoupon-cou">
-                        <input type="checkbox">
+                        <input type="checkbox" class="coupon-chk">
                         <i class="fas fa-ticket-alt"></i>
                         <div>XX券</div>
                         <div>-$1000</div>
@@ -115,13 +162,13 @@
                 </div>
                 <div class="shopcoupon-end">
                     <div class="chk-all">
-                        <input type="checkbox">
+                        <input type="checkbox" class="coupon-chk-all">
                         <span>全選</span>
                     </div>
                     <div class="shopcoupon-price">
                         <div class="shopcoupon-msg">
                             <span>購買總金額 : </span>
-                            <span class="shopcoupon-money">$0</span>
+                            <span class="shopcoupon-money">$1,000,000,000</span>
                             <p>可獲得X幣</p>
                         </div>
                         <button class="btn btn-danger">去買單</button>

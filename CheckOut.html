@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳</title>
+    <link rel="Shortcut Icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/checkout.css">
+</head>
+<body>
+    <div class="checkout">
+        <div class="containers">
+            <div class="check-head">
+                <div class="col-7">訂單商品</div>
+                <div class="col">單價</div>
+                <div class="col">數量</div>
+                <div class="col">總價</div>
+            </div>
+            <div class="check-body">
+                <div class="check-company">
+                    <div>廠商 TV000050464</div>
+                </div>
+                <div class="check-order">
+                    <a href="#" class="col-5">
+                        <div class="order-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="check-name">商品名稱</div>
+                    </a>
+                    <div class="col">規格</div>
+                    <div class="col">$200000</div>
+                    <div class="col">1</div>
+                    <div class="col">$200000</div>
+                </div>
+                <div class="check-company">
+                    <div>廠商 TV000050465</div>
+                </div>
+                <div class="check-order">
+                    <a href="#" class="col-5">
+                        <div class="order-img">
+                            <img src="" alt="">
+                        </div>
+                        <div class="check-name">商品名稱</div>
+                    </a>
+                    <div class="col">規格</div>
+                    <div class="col">$200000</div>
+                    <div class="col">1</div>
+                    <div class="col">$200000</div>
+                </div>
+            </div>
+            <div class="check-transport">
+                <div class="check-info">
+                    <div class="check-msg">
+                        <div>留言 :</div>
+                        <input type="text" class="form-control" placeholder="留言給賣家">
+                    </div>
+                    <div class="check-post">
+                        <div class="post-title">寄送資訊</div>
+                        <div class="check-content">
+                            <div class="check-shipping">
+                                <div>XX宅配</div>
+                                <div>$60</div>
+                            </div>
+                            <div class="check-user">
+                                <div>收件人</div>
+                                <div class="check-address">
+                                    <p>XXX先生</p>
+                                    <p>0978128917</p>
+                                    <p>新北市板橋區三民路X號</p>
+                                </div>
+                                <button class="btn" data-toggle="modal" data-target="#recipient"><i class="fas fa-plus"></i>新增收件人</button>
+                                <div class="modal fade show" id="recipient">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                新增收件人
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="pick-up">
+                                                    <button class="btn opencar">XX宅配</button>
+                                                    <button class="btn open7">7-11取貨</button>
+                                                    <button class="btn openfamily">全家取貨</button>
+                                                </div>
+                                                <div class="fill-in-car">
+                                                    <div class="member-info">
+                                                        <button class="btn">同會員資料</button>
+                                                    </div>
+                                                    <input type="text" class="form-control fill-name" placeholder="姓名" maxlength="8">
+                                                    <p style="color:red;font-size:12px;display:none;" class="fill-name-chk"></p>
+                                                    <input type="text" class="form-control fill-phone" placeholder="手機號碼" maxlength="10">
+                                                    <p style="color:red;font-size:12px;display:none;" class="fill-phone-chk"></p>
+                                                    <input type="text" class="form-control fill-address" placeholder="地址" maxlength="30">
+                                                    <p style="color:red;font-size:12px;display:none;" class="fill-address-chk"></p>
+                                                    <div class="post-time">預計到貨時間10月13日 - 10月21日</div>
+                                                </div>
+                                                <div class="fill-in-7">
+                                                    <div class="member-info">
+                                                        <button class="btn">同會員資料</button>
+                                                    </div>
+                                                    <input type="text" class="form-control fill-name" placeholder="姓名" maxlength="8">
+                                                    <p style="color:red;font-size:12px;display:none;" class="fill-name-chk"></p>
+                                                    <input type="text" class="form-control fill-phone" placeholder="手機號碼" maxlength="10">
+                                                    <p style="color:red;font-size:12px;display:none;" class="fill-phone-chk"></p>
+                                                    <div class="choose-7">
+                                                        <div>選擇超商 :</div>
+                                                        <div class="shop7-11-img">
+                                                            <a href="#">
+                                                                <img src="https://i.imgur.com/GqWsuCz.jpg" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div>XX門市</div>
+                                                    </div>
+                                                    <div class="post-time">預計到貨時間10月12日 - 10月20日</div>
+                                                </div>
+                                                <div class="fill-in-family">
+                                                    <div class="member-info">
+                                                        <button class="btn">同會員資料</button>
+                                                    </div>
+                                                    <input type="text" class="form-control fill-name" placeholder="姓名" maxlength="10">
+                                                    <p style="color:red;font-size:12px;display:none;" class="fill-name-chk"></p>
+                                                    <input type="text" class="form-control fill-phone" placeholder="手機號碼" maxlength="10">
+                                                    <p style="color:red;font-size:12px;display:none;" class="fill-phone-chk"></p>
+                                                    <div class="choose-7">
+                                                        <div>選擇超商 :</div>
+                                                        <div class="shop7-11-img">
+                                                            <a href="#">
+                                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQo0ajK0WO6bseP2uhDo9dF6tX8-bboU0Klzw&usqp=CAU" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div>XX門市</div>
+                                                    </div>
+                                                    <div class="post-time">預計到貨時間10月13日 - 10月22日</div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button class="btn btn-light fill-close" data-dismiss="modal">取消</button>
+                                                <button class="btn btn-danger add-user-info">新增</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="check-cost">
+                    <div>訂單金額 : </div>
+                    <span>$1,145</span>
+                </div>
+            </div>
+            <div class="check-pay">
+                <div class="pay-title">
+                    <div>付款資訊</div>
+                    <button class="btn pay-bank-btn">銀行轉帳</button>
+                    <button class="btn pay-card-btn">信用卡/金融卡</button>
+                </div>
+                <div class="pay-card">
+                    <div class="pay-card-head">
+                        <div>選擇付款帳戶</div>
+                        <div class="pay-add-card">
+                            <button class="btn card-pay-btn" data-toggle="modal" data-target="#card-pay"><i class="fas fa-plus"></i>使用信用卡付款</button>
+                            <p>使用信用卡支付海外訂單，須支付海外交易服務費</p>
+                            <div class="modal fade show" id="card-pay">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">新增信用卡</div>
+                                        <div class="modal-body card-body">
+                                            <input type="text" class="form-control" placeholder="持卡者名字">
+                                            <div class="card-class">
+                                                <input type="text" class="form-control visa-number" placeholder="信用卡號碼" maxlength="19" pattern="[0-9]{4}[-][0-9]{4}[-][0-9]{4}[-][0-9]{4}" title="####-####-####-####">
+                                                <div class="card-pay-img">
+                                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Former_Visa_%28company%29_logo.svg" alt="">
+                                                </div>
+                                                <div class="card-pay-img">
+                                                    <img src="https://cdn.vox-cdn.com/thumbor/ODlqn8V2j0KyYyBhKek2UuaysOQ=/0x260:1000x760/fit-in/1200x600/cdn.vox-cdn.com/uploads/chorus_asset/file/13674554/Mastercard_logo.jpg" alt="">
+                                                </div>
+                                                <div class="card-pay-img">
+                                                    <img src="data:image/jpeg;base64,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" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="card-info">
+                                                <div class="card-day">
+                                                    <div>到期</div>
+                                                    <input type="text" class="form-control" placeholder="MM/YY">
+                                                </div>
+                                                <div class="card-cvv">
+                                                    <div>CVV</div>
+                                                    <input type="text" class="form-control" placeholder="000">
+                                                </div>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="帳單地址">
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-light" data-dismiss="modal">取消</button>
+                                            <button class="btn btn-danger">確認</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pay-card-content">
+                        <div class="card-msg">
+                            <div class="card-img">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Former_Visa_%28company%29_logo.svg" alt="">
+                            </div>
+                            <div>XX國際商業銀行</div>
+                            <div class="">****</div>
+                            <div class="card-number">4321</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pay-body">
+                    <div class="pay-detail">
+                        <div>商品總金額 : </div>
+                        <div>$1,075</div>
+                    </div>
+                    <div class="pay-detail">
+                        <div>運費總金額 : </div>
+                        <div>$60</div>
+                    </div>
+                    <div class="pay-detail">
+                        <div>總付款金額 : </div>
+                        <div class="pay-total">$1,145</div>
+                    </div>
+                </div>
+                <div class="pay-footer">
+                    <button class="btn btn-danger">下訂單</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./checkout.js" type="text/javascript"></script>
+</body>
+</html>

@@ -34,6 +34,12 @@ a:hover{
 
 }
 
+.form-control::-webkit-input-placeholder{
+
+    color:#dedede;
+    
+}
+
 .form-control:focus{
 
     box-shadow: none;
