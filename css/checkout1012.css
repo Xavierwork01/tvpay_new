@@ -77,12 +77,7 @@
     white-space: normal;
 
 }
-.check-order-sp{
 
-    background: #fafdff;
-    margin:0 0 10px 0;
-
-}
 .check-transport{
 
     background: #fafdff;
@@ -94,7 +89,6 @@
 
     display:flex;
     align-items: center;
-    border-top:1px dashed #dedede;
     border-bottom:1px dashed #dedede;
     font-size:14px;
 
@@ -116,10 +110,12 @@
 
 }
 
-.check-post {
-    width: 100%;
-    border-left: 1px dashed #dedede;
-    padding: 10px 20px;
+.check-post{
+
+    width: 60%;
+    border-left:1px dashed #dedede;
+    padding:10px 20px;
+
 }
 
 .check-post > .post-title{
@@ -177,42 +173,6 @@
 
     color:red;
     font-size:24px;
-
-}
-
-.invoice-title {
-    background: #fff;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    background: #f5e2e2;
-    margin: 10px 0 0 0;
-    padding: 10px 20px;
-}
-
-.invoice-info {
-    background: #fff;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    background: #f5e2e2;
-    margin: 0 0 10px 0;
-    padding: 10px 20px;
-}
-
-
-.invoice-title > button{
-
-    margin:0 0 0 20px;
-    border:1px solid #dedede;
-    background: #FFF
-
-}
-
-.invoice-title .invoice-btn-Donatename{
-
-    background: #FFF;
-    margin: 0 0 0 20px;
 
 }
 

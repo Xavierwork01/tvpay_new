@@ -1,0 +1,523 @@
+@import './app.css';
+
+/* ------------------ Shopping-Cart ----------------- */
+
+.shoppingcart{
+
+    width: 100%;
+    background: #dedede;
+    height: 100vh;
+
+}
+
+.take{
+
+    background: #fffefb;
+    border: 1px solid rgba(224,168,0,.4);
+    padding:0 20px;
+    line-height: 42px;
+    height: 42px;
+    width: 100%;
+    margin:0 0 10px 0;
+
+}
+
+.take > a {
+
+    color:red;
+
+}
+
+.shopcart-header{
+
+    padding:0 20px;
+    width: 100%;
+    margin:0 0 10px 0;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 55px;
+    background: #fff;
+
+}
+
+.shopcart-header > input {
+
+    width: 20px;
+    height: 20px;
+
+}
+
+.shopcart-header > .col{
+
+    text-align:center;
+
+}
+
+.shopcart-content{
+
+    padding:0 20px;
+    margin:0 0 10px 0;
+    background: #fff;
+
+}
+
+.shopcart-pros{
+
+    display:flex;
+    align-items: center;
+    height: 115px;
+
+}
+
+.shopcart-pros > .del-btn{
+
+    border:1px solid #dedede;
+
+}
+
+.shopcart-pros > .del-btn:active{
+
+    border:1px solid #000;
+
+}
+
+.shopcart-pros > .col{
+
+    text-align:center;
+
+}
+
+.shopcart-pros > input{
+
+    width: 20px;
+    height: 20px;
+
+}
+
+.shopcart-pro{
+
+    display:flex;
+    align-items: center;
+    padding:0px;
+
+}
+
+.shopcart-pro > a{
+    
+    /* width:386.66px; */
+    display:flex;
+    align-items:center;
+
+}
+
+.shopcart-name{
+
+    padding:0 10px;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+
+}
+
+
+.shopcart-img{
+
+    width: 80px;
+    height: 80px;
+    margin:0 0 0 10px;
+
+}
+
+.shopcart-img > img{
+
+    width: 100%;
+    height: 100%;
+    
+}
+
+.shopcart-mount{
+
+    display:flex;
+    padding:0 5px;
+
+}
+
+
+.shopcart-mount > button{
+
+    background: #fff;
+    border:1px solid #dedede;
+    width: 40px;
+}
+
+.shopcart-mount > input{
+
+    width: 55px;
+    height: 40px;
+    text-align: center;
+    border:1px solid #dedede;
+    margin:0px;
+
+}
+
+.shopcart-mount > input::-webkit-outer-spin-button,
+.shopcart-mount > input::-webkit-inner-spin-button{
+
+    -webkit-appearance: none;
+
+}
+
+.shopcart-coupon{
+
+    background: #fff;
+}
+
+
+.shopcoupon-title{
+
+    display:flex;
+    align-items: center;
+    padding:0 20px;
+    height: 50px;
+    border-bottom:1px solid #dedede;
+
+}
+
+.shopcoupon-title > div{
+
+    margin:0 20px;
+
+}
+
+.shopcoupon-title > button{
+
+    border:1px solid #dedede;
+
+}
+
+.shopcoupon-cou{
+
+
+    display:flex;
+    align-items:center;
+    border-bottom:1px solid #dedede;
+    height: 50px;
+
+}
+
+.shopcoupon-cou > input{
+
+    width: 20px;
+    height: 20px;
+    margin:0 20px;
+
+}
+
+.shopcoupon-cou > div{
+
+    margin:0 10px;
+
+}
+
+.shopcoupon-end{
+
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.chk-all{
+
+    display:flex;
+    align-items: center;
+
+}
+
+.chk-all > input {
+
+    width: 20px;
+    height: 20px;
+    margin:0 20px;
+
+}
+
+.shopcoupon-price{
+
+    display:flex;
+    align-items: center;
+
+}
+
+.shopcoupon-msg > .shopcoupon-money{
+    
+    font-size:30px;
+    color:red;
+
+}
+
+.shopcoupon-msg > p{
+
+    color:#ffa500;
+    font-size:14px;
+
+}
+
+.shopcoupon-price > button{
+
+    width: 200px;
+    margin:0 20px;
+
+}
+
+.coupon-add{
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: lightgray;
+    height: 80px;
+
+}
+
+.coupon-add > input {
+
+    width:343px;
+    font-size:14px;
+
+}
+
+.coupon-add > button{
+
+    border:1px solid #dedede;
+    background: #fff;
+
+}
+
+.coupon-add > button {
+
+    width:100px;
+
+}
+
+.coupon-add > div , input{
+
+    margin:0 10px;
+
+}
+
+.modal-footer > input{
+
+    width: 150px;
+
+}
+
+.modal-footer > .coupon-close{
+
+    border:1px solid #dedede;
+
+}
+
+.coupon-box{
+
+    margin:20px 0;
+    overflow-y:scroll;
+    height: 276px;
+    
+}
+
+.coupon-msg{
+
+    height: 40px;
+    display:flex;
+    align-items: center;
+    padding:0 20px;
+    font-size:14px;
+    margin:20px 0 0 0;
+    background:#fef7e7;
+
+}
+
+.coupon-use{
+
+    margin:20px 0 0 0;
+
+}
+
+.coupon-sales{
+
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    opacity: 0.5;
+    margin:0 0 10px 0;
+
+}
+
+.ticket-head{
+
+    position: relative;
+    width: 118px;
+    height: 118px;
+    background-image: radial-gradient(
+        circle at 0.5px 12px, transparent 5px,
+        lightgray 0px, lightgray 0px
+    );
+    background-image: radial-gradient(
+        circle at 0.5px 12px, transparent 5px,
+        lightgray 0px,lightgray 0px
+    );
+    background-size: 200px 18px;
+    background-repeat-x: no-repeat;
+
+}
+
+
+.ticket-head > h3 {
+
+    position: absolute;
+    top:calc(50% - 16.5px);
+    left:calc(50% - 33px);
+    margin:0px;
+    color:#dedede;
+    text-shadow:2px 3px 3px gray;
+
+}
+
+
+.ticket-body{
+
+    width:400px;
+    background: #fff;
+    box-shadow: 1px 0.8px 3px 0.5px #dedede;
+    display:flex;
+    align-items: center;
+
+}
+
+.ticket-name1{
+
+    width:70%;
+    padding:0 20px;
+
+}
+
+.ticket-name1 > p{
+
+    font-size:14px;
+    margin:0px;
+
+}
+
+.ticket-name2{
+
+    width:30%;
+    padding:0 20px;
+    display:flex;
+    align-items: flex-end;
+
+}
+
+/* ------------------- coupon-caption --------------------- */
+
+.caption-wrapper{
+
+    background: lightgray;
+    height: 120vh;
+
+}
+
+.caption{
+
+    width:375px;
+    height: 700px;
+    margin:auto;
+
+}
+
+.caption-title{
+
+    background: #000;
+    width: 375px;
+    height:150px;
+}
+
+.caption-content{
+
+    padding:30px 20px 0 20px;
+    background: #fff;
+
+}
+
+.caption-info > p {
+
+    font-size:14px;
+
+}
+
+.caption-content > button {
+
+    width: 100%;
+    margin:10px 0;
+
+}
+
+.caption-title{
+
+    position: relative;
+
+}
+
+.coupon-example{
+
+    display:flex;
+    position: absolute;
+    bottom:-20px;
+    left:calc(50% - 171px)
+
+}
+
+.example-title{
+
+    position: relative;
+    width: 118px;
+    height: 118px;
+    background-image: radial-gradient(
+        circle at 0.5px 12px, transparent 5px,
+        lightgray 0px, lightgray 0px
+    );
+    background-image: radial-gradient(
+        circle at 0.5px 12px, transparent 5px,
+        lightgray 0px,lightgray 0px
+    );
+    background-size: 200px 18px;
+    background-repeat-x: no-repeat;
+    position: relative;
+
+}
+
+.example-title > h3{
+
+    position: absolute;
+    top:calc(50% - 16.5px);
+    left:calc(50% - 36px);
+    color:#dedede;
+    text-shadow:2px 3px 3px gray;
+
+}
+
+.example-body{
+
+    background: #fff;
+    width:225px;
+    height: 118px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}

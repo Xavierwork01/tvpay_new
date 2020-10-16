@@ -1,22 +1,17 @@
 @import './app.css';
 
 /* ------------------ Shopping-Cart ----------------- */
-
+body{
+    background: #dedede;    
+}
 .shoppingcart{
 
     width: 100%;
     background: #dedede;
-    height: 100%;
-
 }
-
-
-
 .allmoney .red{
     color: #F00;
 }
-
-
 .take{
 
     background: #fffefb;
@@ -24,6 +19,7 @@
     padding:0 20px;
     line-height: 42px;
     height: 42px;
+    width: 100%;
     margin:0 0 10px 0;
 
 }
@@ -34,21 +30,10 @@
 
 }
 
-.shopcart-welfare{
-
-    padding:0 20px;
-    margin:0 0 10px 0;
-    display:flex;
-    align-items: center;
-    text-align: center;
-    height: 55px;
-    background: #fff;
-
-}
-
 .shopcart-header{
 
     padding:0 20px;
+    max-width: 100%;
     margin:0 0 10px 0;
     display:flex;
     align-items: center;
@@ -87,6 +72,18 @@
 
 }
 
+.shopcart-pros > .del-btn{
+
+    border:1px solid #dedede;
+
+}
+
+.shopcart-pros > .del-btn:active{
+
+    border:1px solid #000;
+
+}
+
 .shopcart-pros > .col{
 
     text-align:center;
@@ -102,53 +99,19 @@
 
 .shopcart-pro{
 
-    padding:0px;
-    display:flex;
-
-}
-
-.shopcart-pro-info{
-
     display:flex;
     align-items: center;
-    
+    padding:0px;
 
 }
 
-.info-items{
-
-    text-align: center;
+.shopcart-pro > a{
+    
+    /* width:386.66px; */
     display:flex;
     align-items:center;
 
 }
-
-.info-items > .del-btn > i{
-
-    font-size:20px;
-
-}
-
-.rwd-pro-item{
-
-    display:none;
-
-}
-
-.pro-item{
-
-    width:112px;
-    margin:0 auto;
-
-}
-
-.pro-item > .welfare-inp {
-
-    margin:0 auto;
-
-}
-
-
 
 .shopcart-name{
 
@@ -160,7 +123,6 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     white-space: normal;
-    width: 270px;
 
 }
 
@@ -176,14 +138,14 @@
 .shopcart-img > img{
 
     width: 100%;
+    height: 100%;
     
 }
 
 .shopcart-mount{
 
     display:flex;
-    justify-content: center;
-    margin:0 8px;
+    padding:0 5px;
 
 }
 
@@ -192,19 +154,16 @@
 
     background: #fff;
     border:1px solid #dedede;
-    width: 30px;
-    height: 30px;
-
+    width: 40px;
 }
 
 .shopcart-mount > input{
 
-    width: 40px;
-    height: 30px;
+    width: 55px;
+    height: 40px;
     text-align: center;
     border:1px solid #dedede;
     margin:0px;
-    padding:0;
 
 }
 
@@ -212,15 +171,6 @@
 .shopcart-mount > input::-webkit-inner-spin-button{
 
     -webkit-appearance: none;
-
-}
-
-.welfare-inp{
-
-    border:1px solid #dedede;
-    text-align: center;
-    height: 30px;
-    width: 80px;
 
 }
 
@@ -242,20 +192,13 @@
 
 .shopcoupon-title > div{
 
-    margin:0 20px 0 0;
+    margin:0 20px;
 
 }
 
-.coupon-btns > button{
+.shopcoupon-title > button{
 
     border:1px solid #dedede;
-    margin:10px 0;
-
-}
-
-.shopcoupon-title > div > .fa-ticket-alt{
-
-    margin:0 10px 0 0;
 
 }
 
@@ -288,7 +231,6 @@
     display:flex;
     justify-content: flex-end;
     align-items: center;
-    padding:10px;
 
 }
 
@@ -337,43 +279,39 @@
 
 .coupon-add{
 
-    background: lightgray;
-    height: 80px;
-    padding:15px;
-
-}
-
-.coupon-add-inp{
-
     display:flex;
     align-items: center;
     justify-content: center;
+    background: lightgray;
+    height: 80px;
 
 }
 
-.coupon-add-inp > input {
+.coupon-add > input {
 
-    max-width:350px;
+    width:343px;
     font-size:14px;
-    margin:0 10px 0 0;
 
 }
 
-.coupon-add > p{
-
-    width: 410px;
-    margin:auto;
-
-}
-
-.coupon-add-inp > button{
+.coupon-add > button{
 
     border:1px solid #dedede;
     background: #fff;
-    font-size:0.875rem;
 
 }
 
+.coupon-add > button {
+
+    width:100px;
+
+}
+
+.coupon-add > div , input{
+
+    margin:0 10px;
+
+}
 
 .modal-footer > input{
 
@@ -391,7 +329,7 @@
 
     margin:20px 0;
     overflow-y:scroll;
-    height: 280px;
+    height: 276px;
     
 }
 
@@ -409,18 +347,16 @@
 
 .coupon-use{
 
-    margin:10px 0 0 0;
-    width: 100%;
-    display:flex;
-    justify-content: center;
-    
+    margin:20px 0 0 0;
+
 }
 
 .coupon-sales{
 
     display:flex;
+    width: 100%;
     justify-content: center;
-    cursor: pointer;
+    opacity: 0.5;
     margin:0 0 10px 0;
 
 }
@@ -432,11 +368,11 @@
     height: 118px;
     background-image: radial-gradient(
         circle at 0.5px 12px, transparent 5px,
-        #dc3545 0px, #dc3545 0px
+        lightgray 0px, lightgray 0px
     );
     background-image: radial-gradient(
         circle at 0.5px 12px, transparent 5px,
-        #dc3545 0px,#dc3545 0px
+        lightgray 0px,lightgray 0px
     );
     background-size: 200px 18px;
     background-repeat-x: no-repeat;
@@ -450,8 +386,8 @@
     top:calc(50% - 16.5px);
     left:calc(50% - 33px);
     margin:0px;
-    color:gray;
-    text-shadow:-1px -1px 1px #000;
+    color:#dedede;
+    text-shadow:2px 3px 3px gray;
 
 }
 
@@ -469,24 +405,13 @@
 .ticket-name1{
 
     width:70%;
-    height: 100%;
     padding:0 20px;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
 
 }
-
-.ticket-name1 > div {
-
-    font-size:1rem;
-
-}
-
 
 .ticket-name1 > p{
 
-    font-size:0.875rem;
+    font-size:14px;
     margin:0px;
 
 }
@@ -496,26 +421,24 @@
     width:30%;
     padding:0 20px;
     display:flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 
 }
 
 .chk-coupon-use{
 
     color:#FFF;
-    width: 60px;
     height: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
+    display: flex;
+    min-width: 10%;
 
 }
 .chk-coupon-use i {
     color: #FFF;
     background: #dc3545;
-    font-size: 30px;
+    font-size: 25px;
     justify-content: center;
     align-items: center;
     display: none;
@@ -523,16 +446,6 @@
     border-radius: 50px;
     border: 5px solid #f9bcbc;
 }
-
-
-.coupon-addbox{
-
-    margin:10px 0;
-    overflow-y:scroll;
-    height: 276px;
-
-}
-
 
 /* ------------------- coupon-caption --------------------- */
 
@@ -629,313 +542,3 @@
 }
 
 
-@media (max-width:1200px){
-
-    .shopcart-name{
-
-        width: 210px;
-
-    }
-    .pro-item{
-
-        width:92px;
-
-    }
-
-    .rwd-info-div > p{
-
-        margin:0 0 0 10px;
-
-    }
-
-}
-
-
-@media (max-width:996px){
-
-    .shopcart-header{
-
-        display:none;
-
-    }
-
-    .shopcoupon-end{
-
-        padding:10px 20px;
-
-    }
-
-    .shopcoupon-price{
-
-        width: 100%;
-        justify-content: space-between;
-
-    }
-
-    .shopcart-content{
-
-        padding:20px;
-
-    }
-
-    .shopcart-name{
-
-        width: 100%;
-
-    }
-
-    .shopcart-pros{
-
-        height: 100%;
-        margin: 0 0 20px 0;
-
-    }
-
-    .info-items{
-
-        display:block;
-        text-align:left;
-        width: 100%;
-        padding:0 10px;
-
-    }
-
-    .pro-item{
-
-        margin:0;
-        
-
-    }
-
-    .shopcart-img{
-
-        width: 250px;
-        height: 250px;
-        margin:0;
-
-    }
-
-
-    .shopcart-pros > input {
-
-        display:none;
-
-    }
-
-    .shopcart-pro-info{
-
-        display:block;
-        max-width:390px;
-
-    }
-
-    .rwd-info-div{
-
-        margin:10px 0;
-        width: 100%;
-        display:flex;
-        align-items: center;
-        
-    }
-
-    .rwd-pro-item{
-
-        display:block;
-        margin:0 10px 0 0;
-        
-    }
-
-    .shopcart-mount{
-
-        justify-content: flex-start;
-        
-    }
-    
-    .pro-item > .welfare-inp {
-
-        margin:0;
-    
-    }
-
-    .pro-item > p{
-
-        margin:0px;
-    }
-
-    .coupon-sales{
-
-        width:100%;
-
-    }
-
-    .ticket-head{
-
-        writing-mode: vertical-lr;
-        letter-spacing: 3px;
-
-    }
-
-    .caption-open{
-
-        writing-mode: vertical-lr;
-        letter-spacing: 3px;
-
-    }
-
-    .ticket-head > h3{
-
-        top:calc(50% - 43.9px);
-        left:calc(50% - 16px);
-
-    }
-
-
-}
-
-@media (max-width:768px){
-
-    .shopcart-pros{
-
-        align-items: flex-start;
-
-    }
-
-    .shopcart-img{
-
-        width: 180px;
-        height: 180px;
-
-    }
-
-
-    .rwd-info-div{
-
-        /* margin:0 0 5px 0; */
-        margin:10px 0 0 0;
-
-    }
-
-    .shopcart-pro-info{
-
-        max-width:290px;
-
-    }
-
-
-    .shopcoupon-price{
-
-        display:block;
-
-    }
-
-    .shopcoupon-price > button{
-
-        width: 100%;
-        margin:0;
-
-    }
-
-    .shopcoupon-title{
-
-        height: 100%;
-
-    }
-
-    .tvpay-coupon{
-
-        width: 40%;
-
-    }
-
-    .coupon-btns{
-
-        margin:0px;
-        width:60%;
-
-    }
-
-    .coupon-btns > button{
-
-        width: 100%;
-        
-    }
-
-    .rwd-info-div{
-
-        font-size:14px;
-
-    }
-
-}
-
-@media (max-width:576px){
-
-    .shopcoupon-title{
-
-        display:block;
-        width: 100%;
-
-    }
-
-    .tvpay-coupon{
-
-        width: 100%;
-        padding:10px 0;
-
-    }
-
-    .shopcart-pro-info{
-
-        width: 100%;
-
-    }
-
-    .coupon-btns{
-
-        width: 100%;
-
-    }
-
-    .modal-footer > .btn {
-
-        width: 100%;
-
-    }
-
-    .chk-coupon-use{
-
-        width:35px;
-    }
-
-    .ticket-name1 > div{
-
-        overflow:hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        white-space: normal;
-
-    }
-
-    .chk-coupon-use i {
-
-        font-size:20px;
-
-    }
-
-    
-    .coupon-msg{
-
-        padding:10px;
-
-    }
-
-    .coupon-add-inp > input{
-
-
-
-    }
-
-}

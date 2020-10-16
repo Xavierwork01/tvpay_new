@@ -4,10 +4,11 @@
 *{
     margin:0px;
 }
-
+body{
+    background: #dedede;    
+}
 .checkout{
 
-    background: #dedede;
     width: 100%;
     height: 120vh;
 
@@ -27,8 +28,8 @@
 .check-company{
 
     height: 30px;
-    background: lightpink;
-    padding:0 20px;
+    background: #f9cb9d;
+    padding: 0 20px;
     display:flex;
     align-items: center;
     margin:10px 0 0 0 ;
@@ -145,7 +146,14 @@
 
 }
 
-.check-user > button{
+.check-user button,
+.check-info .btn,
+.Bookinginfo .btn{
+
+    border:1px solid #dedede;
+
+}
+{
 
     border:1px solid #dedede;
 
@@ -163,14 +171,12 @@
 }
 
 
-.check-cost{
-
-    height: 80px;
-    display:flex;
+.check-cost {
+    height: 40px;
+    display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding:0 20px;
-
+    padding: 0 20px;
 }
 
 .check-cost > span{
@@ -545,4 +551,48 @@
     filter:grayscale(100%)
     /* height: 100%; */
 
+}
+
+.Ordercompleted {
+    background: #f00;
+    color: #FFF;
+}
+
+.Bookinginfo {
+    width: 100%;
+    border-left: 1px dashed #dedede;
+    background: #fff;
+}
+
+.Booking-title.col-12 {
+    border-bottom: 1px solid #dedede;
+    padding: 10px;
+}
+
+.Booking-title .listinfo {
+    border-top: 1px dashed #dedede;
+}
+textarea#Bookingtextarea {
+    border:1px solid #dedede;
+    width: 100%;
+    border-radius: .25rem;
+    vertical-align:text-top;
+}
+.checkout .ordertop{
+    font-size: 80%;
+    background: #f00;
+    padding: 2px;
+    margin: 2px;
+    border-radius: .25rem;
+    color: #fff;
+}
+
+.check-order-add{
+    background: #ffffe4;
+}
+
+.check-order-add img {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
 }
